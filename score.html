@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="description" content="" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/custom.js"> </script>
+	<title>Result Master</title>
+</head>
+
+<body>
+<!-- header start here-->
+<div class="header">
+<img   alt="logo" class="logo-image" src=".\images/logo.png">
+<h2 class="header-text">PRIMARY AND SECONDARY SCHOOL<br /><span> RESULT COMPILER</span> </h2>
+</div>
+
+<!-- Navigation bar start here-->
+<nav>
+<ul>
+  <li><a href=".\home.html"class="w3-large fa fa-home" style="color: white;">Home</a></li>
+  <li><a href=".\registration.html">Registration</a></li>
+  <li><a href=".\score.html">Score</a></li>
+  <li><a href=".\home.html">Compile</a></li>
+  <li><a href=".\update.html">Update</a></li>
+  <li><a href=".\print.html">Print</a></li>
+  <li><button class="search-btn" type="button" name="serach-btn"><input type="text" class="search" name="search" autocomplete="true"  placeholder="Search student using id"/>Search</button>
+  </li>
+</ul>
+</nav>
+
+<!-- Body Content start here-->
+<div class="content">
+
+<div class="content-div" id="login-form">
+<div class="form-header" id="login-form-head"><strong>Add Student Score</strong></div>
+<form action="home.html" onclick="home.html">
+<input type="text" placeholder="Registration Number" name="regNumber"class="input-field" id="regNumber" />
+                         <select name="category"class="input-field-combo" id="category" onchange="categoryClassSubject()" required="required">
+                            <option value="">
+                            Category
+                            </option>
+                            <option value="Nursery">
+                                NURSERY
+                            </option>
+                            <option value="Primary">
+                                PRIMARY
+                            </option>
+                            <option value="Junior Secondary">
+                                JUNIOR SECONDARY
+                            </option>
+                            <option value="Senior Secondary">
+                                SENIOR SECONDARY
+                            </option>
+                        </select>
+                        <select name="class"class="input-field-combo" id="class" required="required">
+                            <option value="">
+                                Class
+                            </option>
+                     </select>
+                      <select name="subject"class="input-field-combo" id="subject" required="required">
+                            <option value="">
+                                Subject
+                            </option>
+                     </select> 
+                     <input type="text" placeholder="First C.A Test" name="CA1" class="input-field"id="CA1" />
+                     <input type="text" placeholder="Second C.A Test" name="CA2" class="input-field"id="CA2" />
+                     <input type="text" placeholder="Third C.A Test" name="CA3" class="input-field"id="CA3" />
+                     <input type="text" placeholder="Examiation Score" name="EXAMS" class="input-field"id="EXAMS" />   
+                        <button type="button" id="login-btn" onclick="home.html"><a href="registration.html" class="sumit-btn">Submit</a></button>
+
+</form>
+</div>
+</div>
+
+
+<!--footer start here-->
+<footer>
+<div class="inner">
+					<ul class="footer-list">
+						<li>&copy; N-Power Technologies Nguroje 2019. All rights reserved.</li>
+                        <li>Design By Anas and Abubakar</li>
+					</ul>
+				</div>
+</footer >
+
+
+</body>
+</html>
